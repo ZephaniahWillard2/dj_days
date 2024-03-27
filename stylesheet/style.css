@@ -8,12 +8,11 @@ p{
 /* header */
 header{
     padding-top: 20px;
-    padding-bottom: 300px;
+    padding-bottom: 30px;
     margin: -10px;
-    background-image: linear-gradient(to bottom, #030303, #142270);
-    box-shadow: 0px -20px 10px 70px #142270;
 }
 h1{
+    display: inline;
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
     top: 10px;
@@ -22,19 +21,19 @@ h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 h2{
+    color: white;
 }
 header h2{
     text-align: center;
-    color: white;
-
 }
 
 /* nav */
 nav{
     padding-top: 55px;
+    
 }
-
 nav ul{
     list-style: none;
     text-align: center;
@@ -49,23 +48,60 @@ nav ul a{
     text-decoration: none;
 }
 nav li a:hover{
-    background-color: aquamarine;
+    color: aquamarine;
 }
+
+
+/* body general */
+body{
+    background-image: linear-gradient(to bottom, #030303, #2144C0);
+    box-shadow: 0px -20px 10px 70px #142270;
+}
+
 
 /* body album display */
 
 .grid-container{
+    color: white;
+    padding-top: 150px;
     text-align: center;
     display: grid;
     grid: 
     'myArea . .'
     'myArea . .';
-    
 }
 
 
-  
+/* body album collection */
+.scrollable{
+    height: 100px;
+    overflow-y: auto;
+}
+.scrollable div{
+    display: grid;
+    grid: 
+    'myArea . . . .'
+    'myArea . . . .'
+    'myArea . . . .';
+    gap: 10px;
+    list-style: none;
+    padding: 15px;
+}
 
-/* body{
-    background-color: aquamarine;
-} */
+/* body add album */
+.add-album-container{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.add-album-container label{
+    color: white;
+}
+
+footer{
+    display: flex;
+    padding: 100px;
+}
+footer .footer-image{
+    flex: 1;
+}
+

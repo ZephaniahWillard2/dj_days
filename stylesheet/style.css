@@ -1,0 +1,71 @@
+p{
+    color: #40B5F0;
+    color: #2144C0;
+    color: #142270;
+    color: #030303;
+    
+}
+/* header */
+header{
+    padding-top: 20px;
+    padding-bottom: 300px;
+    margin: -10px;
+    background-image: linear-gradient(to bottom, #030303, #142270);
+    box-shadow: 0px -20px 10px 70px #142270;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background: -webkit-linear-gradient(#40B5F0, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2{
+}
+header h2{
+    text-align: center;
+    color: white;
+
+}
+
+/* nav */
+nav{
+    padding-top: 55px;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    padding: 40px;
+}
+nav ul a{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+nav li a:hover{
+    background-color: aquamarine;
+}
+
+/* body album display */
+
+.grid-container{
+    text-align: center;
+    display: grid;
+    grid: 
+    'myArea . .'
+    'myArea . .';
+    
+}
+
+
+  
+
+/* body{
+    background-color: aquamarine;
+} */

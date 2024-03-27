@@ -105,9 +105,9 @@ h2{
 .scrollable div{
     display: grid;
     grid: 
-    'myArea . . .'
-    'myArea . . .'
-    'myArea . . .';
+    'myArea . .'
+    'myArea . .'
+    'myArea . .';
     gap: 30px;
     list-style: none;
     padding: 15px;

@@ -34,16 +34,13 @@ header img{
     height: 500px;
     max-width: fit-content;
     border-radius: 50%;
+    position: relative;
 }
 
 /* nav */
 nav{
     position: top;
     padding-top: 15px;
-    
-
-    
-    
 }
 nav ul{
     list-style: none;
@@ -62,6 +59,7 @@ nav ul a{
 }
 nav li a:hover{
     color: aquamarine;
+    text-decoration: underline;
 }
 
 
@@ -96,23 +94,24 @@ h2{
 
 
 /* body album collection */
-.scrollable{
-    height: 100px;
+.scrollable div{
+    height: 150px;
     overflow-y: auto;
     background-color: white;
 }
-.scrollable h2{
+/* .scrollable h2{
     color: #030303;
-}
+} */
 .scrollable div{
     display: grid;
     grid: 
-    'myArea . . . .'
-    'myArea . . . .'
-    'myArea . . . .';
-    gap: 10px;
+    'myArea . . .'
+    'myArea . . .'
+    'myArea . . .';
+    gap: 30px;
     list-style: none;
     padding: 15px;
+    
 }
 
 /* body add album */

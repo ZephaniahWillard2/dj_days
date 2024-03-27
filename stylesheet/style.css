@@ -1,10 +1,10 @@
-p{
+/* p{
     color: #40B5F0;
     color: #2144C0;
     color: #142270;
     color: #030303;
     
-}
+} */
 /* header */
 header{
     padding-top: 20px;
@@ -22,16 +22,27 @@ h1{
   -webkit-text-fill-color: transparent;
 }
 
-h2{
-    color: white;
-}
+
 header h2{
     text-align: center;
+}
+/* header image */
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    max-width: fit-content;
+    border-radius: 50%;
 }
 
 /* nav */
 nav{
-    padding-top: 55px;
+    position: top;
+    padding-top: 15px;
+    
+
+    
     
 }
 nav ul{
@@ -40,7 +51,9 @@ nav ul{
 }
 nav li{
     display: inline-block;
-    padding: 40px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 nav ul a{
     color: white;
@@ -57,13 +70,23 @@ body{
     background-image: linear-gradient(to bottom, #030303, #2144C0);
     box-shadow: 0px -20px 10px 70px #142270;
 }
+h2{
+    color: white;
+}
+
+/* body now playing */
+#now-play{
+    text-align: center;
+    padding-top: 50px;
+}
 
 
 /* body album display */
 
 .grid-container{
     color: white;
-    padding-top: 150px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     text-align: center;
     display: grid;
     grid: 
@@ -76,6 +99,10 @@ body{
 .scrollable{
     height: 100px;
     overflow-y: auto;
+    background-color: white;
+}
+.scrollable h2{
+    color: #030303;
 }
 .scrollable div{
     display: grid;
@@ -91,17 +118,22 @@ body{
 /* body add album */
 .add-album-container{
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 .add-album-container label{
     color: white;
 }
 
+
+/* footer */
 footer{
     display: flex;
     padding: 100px;
+    color: white;
+    background-color: #030303;
+    text-align: center;
 }
-footer .footer-image{
+footer div{
     flex: 1;
 }
 

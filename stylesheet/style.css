@@ -206,4 +206,25 @@ footer{
 footer div{
     flex: 1;
 }
+footer ul{
+    list-style: none;
+    font-size: smaller;
+    text-align: center;
+
+}
+footer li{
+    padding-bottom: 10px;
+
+
+}
+footer li a{
+    color: rgb(198, 194, 194);
+    text-decoration: none;
+}
+footer li a:hover{
+    color: white;
+}
+h5{
+    text-decoration: underline;
+}
 

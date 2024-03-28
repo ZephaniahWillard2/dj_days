@@ -18,10 +18,12 @@ h1{
     top: 10px;
     left: 20px;
     background: -webkit-linear-gradient(#40B5F0, purple);
+    background-clip: border-box ;
+    background-clip: padding-box;
+    background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 header h2{
     text-align: center;
@@ -35,6 +37,57 @@ header img{
     max-width: fit-content;
     border-radius: 50%;
     position: relative;
+}
+
+/* header paragraphs */
+#premium-deals{
+    position: absolute;
+    top: 350px;
+    left: 70px;
+    height: 20px;
+    width: 250px;
+    overflow-y: hidden;
+    color: #abddf6;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+#premium-deals:hover{
+    overflow-y: visible;
+}
+
+#online-store{
+    position: absolute;
+    top: 350px;
+    right: 50px; 
+    height: 20px;
+    width: 250px;
+    overflow-y: hidden;
+    color: #abddf6;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+#online-store:hover{
+    overflow-y: visible;
+}
+header p::first-line{
+    text-decoration: underline;
+}
+
+header div{
+    display: flex;
+}
+header article{
+    flex: 1;
+}
+
+/* header paragraphs buttons */
+article button{
+    margin-top: 10px;
+    padding: 5px;
+}
+article button:hover{
+    transform: scale(1.5);
+    transition: 2s;
 }
 
 /* nav */
@@ -115,12 +168,30 @@ h2{
 }
 
 /* body add album */
+form{
+    padding-bottom: 50px;
+}
 .add-album-container{
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
+    
 }
 .add-album-container label{
     color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.add-album-container input{
+    padding: 5px;
+    font-size: larger;
+}
+#add-button{
+    display: block;
+    text-align: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    padding: 5px;
+    font-size: larger;
 }
 
 

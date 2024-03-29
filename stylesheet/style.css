@@ -37,6 +37,7 @@ header img{
     max-width: fit-content;
     border-radius: 50%;
     position: relative;
+    box-shadow: 0px 0px 15px 5px white;
 }
 
 /* header paragraphs */
@@ -111,15 +112,15 @@ nav ul a{
     text-decoration: none;
 }
 nav li a:hover{
-    color: aquamarine;
+    color: #abddf6;
     text-decoration: underline;
 }
 
 
 /* body general */
+
 body{
     background-image: linear-gradient(to bottom, #030303, #2144C0);
-    box-shadow: 0px -20px 10px 70px #142270;
 }
 h2{
     color: white;
@@ -210,21 +211,19 @@ footer ul{
     list-style: none;
     font-size: smaller;
     text-align: center;
-
 }
 footer li{
     padding-bottom: 10px;
-
-
 }
 footer li a{
     color: rgb(198, 194, 194);
     text-decoration: none;
+    text-align: justify;
 }
 footer li a:hover{
     color: white;
 }
-h5{
+h4{
     text-decoration: underline;
 }
 

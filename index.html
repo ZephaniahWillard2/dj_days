@@ -44,6 +44,8 @@
                 <h2>Now Playing</h2>
             </div>
             <!-- Now Playing Display: displays currently playing album, title, artist name, cover art -->
+                <!-- NOTE: dont know how I want to style this yet, i think determined
+                     by later interactivity -->
             <section class="grid-container">
 
                 <div class="album-art">Title Here</div>
@@ -58,6 +60,7 @@
                 <h2>Your Collection</h2>
                 <!-- Not sure how it's going to work making these clickable and moving them
                      to the display area. I don't know what html ill need for that. -->
+                     <!-- NOTE: The size and styling will prolly change with added albums -->
                 <div>
                     <li>Title   Artist</li>
                     <li>Title   Artist</li>
@@ -93,13 +96,13 @@
                 <section class="add-album-container">
                     <h2>Add New Album</h2>
                     <label for="album-title-input">Album Title</label>
-                    <input type="text" id="album-title-input">
+                    <input type="text" id="album-title-input" required>
                     <label for="album-artist-input">Artist</label>
-                    <input type="text" id="album-artist-input">
+                    <input type="text" id="album-artist-input" required>
                     <label for="album-genre-input">Genre</label>
                     <input type="text" id="album-genre-input">
                     <label for="album-art-input">Cover Art URL</label>
-                    <input type="url" id="album-art-input" required>
+                    <input type="url" id="album-art-input">
 
                 </section>
                 <button id="add-button">Add</button>
@@ -116,8 +119,8 @@
 
         <footer>
             <div>
-                <h5>About</h5>
                 <ul>
+                    <h4>About</h4>
                     <li>
                         <a href="">Make a Free Account</a>
                     </li>
@@ -132,31 +135,47 @@
 
                     <li>
                         <a href="">Screenshots</a>
-
                     </li>
                 </ul>
             </div>
             <div>
-                <h5>Social Media</h5>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <h4>Social Media</h4>
+                    <li>
+                        <a href="">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="">Meta</a>
+                    </li>
+                    <li>
+                        <a href="">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="">Twitter</a>
+                    </li>
                 </ul>
             </div>
             <div>
-                <h5>Contact Support</h5>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul style="text-align: center;">
+                    <h4>Support</h4>
+
+                    <li>
+                        <a href="">Contact Support</a>
+                    </li>
+                    <li>
+                        <a href="">Settings</a>
+                    </li>
+                    <li>
+                        <a href="">Forums</a>
+                    </li>
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
                 </ul>
             </div>
             <div>
-                <h5>Copyright DJDays.co</h5>
                 <ul>
+                    <h4>Copyright DJDays.co</h4>
                     <li></li>
                     <li></li>
                     <li></li>

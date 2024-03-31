@@ -5,7 +5,9 @@
     color: #030303;
     
 } */
-/* header */
+/* header general*/
+    /* NOTE: Prolly change top content to a flexbox, move header-p out of 
+             header, add something to top left */
 header{
     padding-top: 20px;
     padding-bottom: 30px;
@@ -27,68 +29,6 @@ h1{
 
 header h2{
     text-align: center;
-}
-/* header image */
-header img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 500px;
-    max-width: fit-content;
-    border-radius: 50%;
-    position: relative;
-    box-shadow: 0px 0px 15px 5px white;
-}
-
-/* header paragraphs */
-#premium-deals{
-    position: absolute;
-    top: 350px;
-    left: 70px;
-    height: 20px;
-    width: 250px;
-    overflow-y: hidden;
-    color: #abddf6;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-}
-#premium-deals:hover{
-    overflow-y: visible;
-}
-
-#online-store{
-    position: absolute;
-    top: 350px;
-    right: 50px; 
-    height: 20px;
-    width: 250px;
-    overflow-y: hidden;
-    color: #abddf6;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-}
-#online-store:hover{
-    overflow-y: visible;
-}
-header p::first-line{
-    text-decoration: underline;
-}
-
-header div{
-    display: flex;
-}
-header article{
-    flex: 1;
-}
-
-/* header paragraphs buttons */
-article button{
-    margin-top: 10px;
-    padding: 5px;
-}
-article button:hover{
-    transform: scale(1.5);
-    transition: 2s;
 }
 
 /* nav */
@@ -116,11 +56,99 @@ nav li a:hover{
     text-decoration: underline;
 }
 
+/* support/profile */
+#support-profile{
+    display: inline;
+    padding-top: 15px;
+    padding-left: 15px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+#support-profile a{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+#support-profile a:hover{
+    color: #abddf6;
+    text-decoration: underline;
+}
+
+
+/* header image */
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    max-width: fit-content;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 0px 15px 5px white;
+    margin-bottom: 80px;
+}
+
+/* header paragraphs */
+
+#premium-deals{
+    position: absolute;
+    top: 350px;
+    left: 70px;
+    height: 20px;
+    width: 250px;
+    overflow-y: hidden;
+    color: #abddf6;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+#online-store{
+    position: absolute;
+    top: 350px;
+    right: 50px; 
+    height: 20px;
+    width: 250px;
+    overflow-y: hidden;
+    color: #abddf6;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+#marketing p:hover{
+    overflow-y: visible;
+}
+#marketing p::first-line{
+    text-decoration: underline;
+}
+
+header div{
+    display: flex;
+}
+header article{
+    flex: 1;
+}
+
+
+/* header paragraphs buttons */
+article button{
+    margin-top: 10px;
+    padding: 7px;
+    font-size: larger;
+}
+article button:hover{
+    transform: scale(1.5);
+    transition: 2s;
+}
+
 
 /* body general */
 
 body{
     background-image: linear-gradient(to bottom, #030303, #2144C0);
+    margin-left: -0.5px;
+    margin-right: -0.5px;
+    margin-bottom: -1px;
 }
 h2{
     color: white;
@@ -129,7 +157,8 @@ h2{
 /* body now playing */
 #now-play{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
+    border-top: solid;
 }
 
 
@@ -144,6 +173,7 @@ h2{
     grid: 
     'myArea . .'
     'myArea . .';
+    gap: 10px;
 }
 
 
@@ -153,9 +183,9 @@ h2{
     overflow-y: auto;
     background-color: white;
 }
-/* .scrollable h2{
-    color: #030303;
-} */
+.scrollable h2{
+    margin-left: 7px;
+}
 .scrollable div{
     display: grid;
     grid: 
@@ -170,39 +200,48 @@ h2{
 
 /* body add album */
 form{
-    padding-bottom: 50px;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    position: static;
+}
+form h2{
+    margin-left: 7px;
+    padding-bottom: 20px;
+
 }
 .add-album-container{
     text-align: center;
     padding-bottom: 40px;
-    
 }
 .add-album-container label{
     color: white;
-    padding-left: 5px;
+    padding-left: 30px;
     padding-right: 5px;
 }
 .add-album-container input{
     padding: 5px;
     font-size: larger;
 }
-#add-button{
+/* #add-button{
     display: block;
     text-align: center;
     margin-left: 50%;
     margin-right: 50%;
     padding: 5px;
     font-size: larger;
+} */
+#album-submit-input{
+    margin-left: 30px;
 }
 
-
 /* footer */
+    
 footer{
     display: flex;
     padding: 100px;
     color: white;
     background-color: #030303;
-    text-align: center;
+    text-align: center;        
 }
 footer div{
     flex: 1;

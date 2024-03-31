@@ -21,11 +21,16 @@
                 <li><a href="">About Us</a></li>
             </ul>
         </nav>
+
+        <section id="support-profile">
+            <a href="">Log In</a>
+        </section>
+
         <br><br><br>
         <img src="imgs/DJpic.jpg" alt="Silhouette of a DJ in a club">
         <div>
-            <article>
-                <p id="premium-deals">Subscriber to Premium! Pick from thousands of more albums with premium. 
+            <article id="marketing">
+                <p id="premium-deals">Subscribe to Premium! choose from thousands of more albums with premium. 
                     Try a three month subcription for free. Get acces to the latest cutting edge features.
                     <button>Get Premium!</button>
                 </p>
@@ -60,7 +65,7 @@
                 <h2>Your Collection</h2>
                 <!-- Not sure how it's going to work making these clickable and moving them
                      to the display area. I don't know what html ill need for that. -->
-                     <!-- NOTE: The size and styling will prolly change with added albums -->
+                     <!-- NOTE: The size and styling will change with added albums -->
                 <div>
                     <li>Title   Artist</li>
                     <li>Title   Artist</li>
@@ -100,16 +105,18 @@
                     <label for="album-artist-input">Artist</label>
                     <input type="text" id="album-artist-input" required>
                     <label for="album-genre-input">Genre</label>
-                    <input type="text" id="album-genre-input">
+                    <input type="text" id="album-genre-input" required>
                     <label for="album-art-input">Cover Art URL</label>
-                    <input type="url" id="album-art-input">
+                    <input type="url" id="album-art-input" required>
+                    <input type="submit" id="album-submit-input">
+
+
 
                 </section>
-                <button id="add-button">Add</button>
+                <!-- <button id="add-button">Add</button> -->
 
             </form>
-            
-
+        
 
         </main>
 

@@ -4,7 +4,7 @@
     color: #142270;
     color: #030303;
 } */
-
+/* OverallNOTE: work on naming conventions. */
     /* NOTE: Prolly change top content to a flexbox, move header-p out of 
              header, add something to top left */
 
@@ -153,6 +153,7 @@ h2{
     color: white;
 }
 
+    /* NOTE: Feels like theres something missing here. Like there should more going on in the background. */
 /* body album display */
 .grid-container{
     color: white;
@@ -212,16 +213,24 @@ h2{
     overflow-y: auto;
     background-color: #030303;
     border: solid white;
+    justify-content: center;
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 1400px; */
 }
-    /* NOTE: align the h2 text better, style the border better */
+    /* NOTE: I dont like how the h2 and maybe whole album collection section is styled. 
+             Feels weird. */
 .scrollable h2{
     padding: 5px 10px 5px 10px;
-    border-top: solid white;
+    border: solid white;
+    /* text-align: center; */
+    background-color: #030303;
     /* height: fit-content;
     width: fit-content;
     box-sizing: border-box;
-    border-radius: 5%; */
-    background-color: #030303;
+    border-radius: 5%;
+    margin-left: auto;
+    margin-right: auto; */
 }
 
 .scrollable div ul{

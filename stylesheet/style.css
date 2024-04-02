@@ -43,6 +43,7 @@ header h2{
 nav{
     position: top;
     padding-top: 15px;
+    border-bottom: solid white;
 }
 nav ul{
     list-style: none;
@@ -50,7 +51,7 @@ nav ul{
 }
 nav li{
     display: inline-block;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -69,7 +70,7 @@ nav li a:hover{
     display: inline;
     padding-left: 15px;
     position: absolute;
-    top: 30px;
+    top: 25px;
     right: 50px;
 }
 #support-profile a{
@@ -87,7 +88,7 @@ header img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 500px;
+    height: 400px;
     max-width: fit-content;
     border-radius: 50%;
     position: relative;
@@ -154,6 +155,8 @@ h2{
 }
 
     /* NOTE: Feels like theres something missing here. Like there should more going on in the background. */
+    /* NOTE: Not sure how i feel about the shadow. Feels like something with the image above should
+             change if im gona keep it. */
 /* body album display */
 .grid-container{
     color: white;
@@ -166,6 +169,7 @@ h2{
     grid-template-rows: 100px 150px 150px 30px 30px 50px;
     gap: 15px;
     border: solid white;
+    box-shadow: 0px 0px 15px 5px white;
     height: 700px;
     width: 650px;
     box-sizing: border-box;
@@ -212,17 +216,22 @@ h2{
     height: 500px;
     overflow-y: auto;
     background-color: #030303;
-    border: solid white;
+    border-bottom: solid white;
+    border-left: solid white;
+    border-right: solid white;
     justify-content: center;
     /* margin-left: auto;
     margin-right: auto;
     width: 1400px; */
 }
+
     /* NOTE: I dont like how the h2 and maybe whole album collection section is styled. 
              Feels weird. */
 .scrollable h2{
-    padding: 5px 10px 5px 10px;
-    border: solid white;
+    padding: 5px 10px 15px 10px;
+    border-top: solid white;
+    border-left: solid white;
+    border-right: solid white;
     /* text-align: center; */
     background-color: #030303;
     /* height: fit-content;
@@ -264,9 +273,11 @@ h2{
 /* body add album */
 form{
     padding-bottom: 100px;
-    padding-top: 60px;
+    padding-top: 100px;
     position: static;
     text-align: center;
+    background-image: linear-gradient(to bottom, #0c2271, #030303e0);
+
 }
 
 .add-album-container{
@@ -283,6 +294,8 @@ form{
     border: solid;
     box-sizing: border-box;
     border-radius: 5%;
+    box-shadow: 0px 0px 10px 1px white;
+
 }
 
 form h2{

@@ -45,17 +45,19 @@
     
     <body>
         <main>
-            <div id="now-play">
-                <h2>Now Playing</h2>
-            </div>
+            
             <!-- Now Playing Display: displays currently playing album, title, artist name, cover art -->
                 <!-- NOTE: dont know how I want to style this yet, i think determined
                      by later interactivity -->
             <section class="grid-container">
+                <div id="now-play">
+                    <h2>Now Playing</h2>
+                </div>
 
-                <div class="album-art">Title Here</div>
-                <div class="album-title">Cover Art Here</div>
-                <div class="album-artist">Artist Here</div>
+                <div id="album-art">Cover Art Here</div>
+                <div id="album-title">Title Here</div>
+                <div id="album-artist">Artist Here</div>
+                <div id="play-buttons"> Play buttons here</div>
 
             </section>
 
@@ -65,32 +67,34 @@
                 <h2>Your Collection</h2>
                 <!-- Not sure how it's going to work making these clickable and moving them
                      to the display area. I don't know what html ill need for that. -->
-                     <!-- NOTE: The size and styling will change with added albums -->
-                <div>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
-                    <li>Title   Artist</li>
+                <!-- NOTE: The list items are filler for now. -->
+                <div id="album-list">
+                    <ul>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                        <li>Title   Artist</li>
+                    </ul>
                 </div>
 
             </section>
@@ -99,22 +103,20 @@
             <!-- Add new album: add new album to the Album list section -->
             <form>
                 <section class="add-album-container">
-                    <h2>Add New Album</h2>
-                    <label for="album-title-input">Album Title</label>
-                    <input type="text" id="album-title-input" required>
-                    <label for="album-artist-input">Artist</label>
-                    <input type="text" id="album-artist-input" required>
-                    <label for="album-genre-input">Genre</label>
-                    <input type="text" id="album-genre-input" required>
-                    <label for="album-art-input">Cover Art URL</label>
-                    <input type="url" id="album-art-input" required>
-                    <input type="submit" id="album-submit-input">
-
-
+                         <h2>Add New Album</h2>
+                        <label for="album-title-input">Album Title</label>
+                        <input type="text" id="album-title-input" placeholder="Album Title" required>
+                        <label for="album-artist-input">Artist</label>
+                        <input type="text" id="album-artist-input" placeholder="Artist" required>
+                        <label for="album-genre-input">Genre</label>
+                        <input type="text" id="album-genre-input" placeholder="Genre" required>                            <label for="album-art-input">Cover Art URL</label>
+                        <input type="url" id="album-art-input" placeholder="URL" required>
+                        <input type="button" id="album-button" value="Add Album">
 
                 </section>
-                <!-- <button id="add-button">Add</button> -->
-
+                <!-- NOTE: the required messages no longer display, is that because the button
+                            is not linked up to the form? Is it because it doesnt do anything yet?
+                            not sure.  -->
             </form>
         
 
@@ -128,67 +130,34 @@
             <div>
                 <ul>
                     <h4>About</h4>
-                    <li>
-                        <a href="">Make a Free Account</a>
-                    </li>
-
-                    <li>
-                        <a href="">Sign Up for Premium</a>
-                    </li>
-
-                    <li>
-                        <a href="">Features</a>
-                    </li>
-
-                    <li>
-                        <a href="">Screenshots</a>
-                    </li>
+                    <li><a href="">Make a Free Account</a></li>
+                    <li><a href="">Sign Up for Premium</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Screenshots</a></li>
                 </ul>
             </div>
             <div>
                 <ul>
                     <h4>Social Media</h4>
-                    <li>
-                        <a href="">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="">Meta</a>
-                    </li>
-                    <li>
-                        <a href="">Youtube</a>
-                    </li>
-                    <li>
-                        <a href="">Twitter</a>
-                    </li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Meta</a></li>
+                    <li><a href="">Youtube</a></li>
+                    <li><a href="">Twitter</a></li>
                 </ul>
             </div>
             <div>
                 <ul style="text-align: center;">
                     <h4>Support</h4>
 
-                    <li>
-                        <a href="">Contact Support</a>
-                    </li>
-                    <li>
-                        <a href="">Settings</a>
-                    </li>
-                    <li>
-                        <a href="">Forums</a>
-                    </li>
-                    <li>
-                        <a href="">FAQ</a>
-                    </li>
+                    <li><a href="">Contact Support</a></li>
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">Forums</a></li>
+                    <li><a href="">FAQ</a></li>
                 </ul>
             </div>
-            <div>
-                <ul>
-                    <h4>Copyright DJDays.co</h4>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+            <!-- <P>Copyright DJDays.co</p> -->
+                    
+            
         </footer>
     </body>
 </html>

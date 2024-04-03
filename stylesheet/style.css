@@ -146,7 +146,8 @@ article button:hover{
 /* Lower nav */
 #lower-nav{
     background-color: #030303a6;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     padding-bottom: 30px;
     padding-top: 30px;
 }

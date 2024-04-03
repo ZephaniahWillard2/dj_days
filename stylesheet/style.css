@@ -1,9 +1,3 @@
-/* p{
-    color: #40B5F0;
-    color: #2144C0;
-    color: #142270;
-    color: #030303;
-} */
 /* OverallNOTE: work on naming conventions. */
     /* NOTE: Prolly change top content to a flexbox, move header-p out of 
              header, add something to top left */
@@ -15,17 +9,19 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header{
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
     margin: -10px;
+    
 }
 h1{
     display: inline;
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 20px;
     background: -webkit-linear-gradient(#40B5F0, purple);
     background-clip: border-box ;
@@ -40,27 +36,28 @@ header h2{
 }
 
 /* nav */
-nav{
+#top-nav-bar{
     position: top;
     padding-top: 15px;
     border-bottom: solid white;
+    margin-bottom: 50px;
 }
-nav ul{
+#top-nav-bar ul{
     list-style: none;
     text-align: center;
 }
-nav li{
+#top-nav-bar li{
     display: inline-block;
     padding-bottom: 30px;
     padding-left: 25px;
     padding-right: 25px;
 }
-nav ul a{
+#top-nav-bar ul a{
     color: white;
     font-size: large;
     text-decoration: none;
 }
-nav li a:hover{
+#top-nav-bar li a:hover{
     color: #abddf6;
     text-decoration: underline;
 }
@@ -99,7 +96,7 @@ header img{
 /* header paragraphs */
 #premium-deals{
     position: absolute;
-    top: 350px;
+    top: 370px;
     left: 70px;
     height: 20px;
     width: 250px;
@@ -111,7 +108,7 @@ header img{
 
 #online-store{
     position: absolute;
-    top: 350px;
+    top: 370px;
     right: 50px; 
     height: 20px;
     width: 250px;
@@ -146,6 +143,33 @@ article button:hover{
     transition: 2s;
 }
 
+/* Lower nav */
+#lower-nav{
+    background-color: #030303a6;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+#lower-nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+#lower-nav li{
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#lower-nav ul a{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+#lower-nav li a:hover{
+    color: #abddf6;
+    text-decoration: underline;
+}
+
 /* body general */
 body{
     background-image: linear-gradient(to bottom, #030303, #2144C0);
@@ -153,10 +177,14 @@ body{
 h2{
     color: white;
 }
+main{
+    padding-top: 50px;
+}
 
     /* NOTE: Feels like theres something missing here. Like there should more going on in the background. */
     /* NOTE: Not sure how i feel about the shadow. Feels like something with the image above should
              change if im gona keep it. */
+             /* UPDATE: shadow works better with the lower nav bar, section still seems off. */
 /* body album display */
 .grid-container{
     color: white;
@@ -170,8 +198,8 @@ h2{
     gap: 15px;
     border: solid white;
     box-shadow: 0px 0px 15px 5px white;
-    height: 700px;
-    width: 650px;
+    height: 680px;
+    width: 620px;
     box-sizing: border-box;
     border-radius: 5%;
     margin-left: auto;
@@ -220,9 +248,6 @@ h2{
     border-left: solid white;
     border-right: solid white;
     justify-content: center;
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 1400px; */
 }
 
     /* NOTE: I dont like how the h2 and maybe whole album collection section is styled. 
@@ -232,14 +257,7 @@ h2{
     border-top: solid white;
     border-left: solid white;
     border-right: solid white;
-    /* text-align: center; */
     background-color: #030303;
-    /* height: fit-content;
-    width: fit-content;
-    box-sizing: border-box;
-    border-radius: 5%;
-    margin-left: auto;
-    margin-right: auto; */
 }
 
 .scrollable div ul{
@@ -277,9 +295,7 @@ form{
     position: static;
     text-align: center;
     background-image: linear-gradient(to bottom, #0c2271, #030303e0);
-
 }
-
 .add-album-container{
     background-color: #030303;
     text-align: center;
@@ -295,9 +311,7 @@ form{
     box-sizing: border-box;
     border-radius: 5%;
     box-shadow: 0px 0px 10px 1px white;
-
 }
-
 form h2{
     margin-left: 7px;
     padding-bottom: 20px;
@@ -317,7 +331,6 @@ form h2{
     padding-top: 15px;
 }
 .add-album-container input{
-    /* padding: 5px; */
     font-size: large;
     padding: 2px;
     padding-left: 15px;

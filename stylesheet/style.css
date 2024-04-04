@@ -121,9 +121,6 @@ header img{
 #marketing p:hover{
     overflow-y: visible;
 }
-#marketing p::first-line{
-    text-decoration: underline;
-}
 
 header div{
     display: flex;
@@ -145,7 +142,7 @@ article button:hover{
 
 /* Lower nav */
 #lower-nav{
-    background-color: #030303a6;
+    background-color: #030303;
     margin-top: 30px;
     margin-bottom: 20px;
     padding-bottom: 30px;
@@ -178,62 +175,75 @@ body{
 h2{
     color: white;
 }
-main{
+/* main{
     padding-top: 50px;
-}
+} */
 
     /* NOTE: Feels like theres something missing here. Like there should more going on in the background. */
     /* NOTE: Not sure how i feel about the shadow. Feels like something with the image above should
              change if im gona keep it. */
              /* UPDATE: shadow works better with the lower nav bar, section still seems off. */
+
+/* body album display image */
+.grid-image{
+    background-image: url(/Users/htgparticipant/Documents/FrontEndDev/dj_days/imgs/nowplaybackground.jpg);
+}
+
 /* body album display */
 .grid-container{
     color: white;
-    background-color: #030303cc;
-    padding-top: 30px;
+    /* background-color: #030303cc; */
+    /* padding-top: 30px; */
     padding-bottom: 30px;
     text-align: center;
     display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 100px 150px 150px 30px 30px 50px;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(4, 100px);
     gap: 15px;
-    border: solid white;
-    box-shadow: 0px 0px 15px 5px white;
-    height: 680px;
+    margin-left: 35px;
+    /* border: solid white; */
+    /* box-shadow: 0px 0px 15px 5px white; */
+    /* height: 680px;
     width: 620px;
-    box-sizing: border-box;
-    border-radius: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
+    box-sizing: border-box; */
+    /* border-radius: 5%; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* justify-content: center; */
 }
 #now-play{
-    grid-column: 1 / span 3;
-    text-align: center;
-    padding: 30px;
+    grid-column: 1 / span 2;
+    text-align: left;
+    /* padding: 30px; */
 }
 #album-art{
     /* height: 200px;
     width: 175px; */
     border: solid;
     border-radius: 5%;
-    grid-column: 1 / span 3;
-    grid-row: 2 / span 2;
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 4;
 }
 #album-title{
     grid-column: 1 / span 3;
-    grid-row: 4;
+    grid-row: 2;
     text-align: left;
 }
 #album-artist{
     grid-column: 1 / span 3;
-    grid-row: 5;
+    grid-row: 3;
     text-align: left;
 }
 #play-buttons{
-    grid-column: 1 / span 3;
-    grid-row: 6;
+    color: white;
+    font-size: larger;
     border: solid;
+    box-sizing: border-box;
+    height: fit-content;
+    width: fit-content;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 15px auto 0px auto;
 }
 
     /* NOTE: I'm worried that with adding in photo url's the sizing is going
@@ -254,7 +264,7 @@ main{
     /* NOTE: I dont like how the h2 and maybe whole album collection section is styled. 
              Feels weird. */
 .scrollable h2{
-    padding: 5px 10px 15px 10px;
+    padding: 25px 10px 15px 10px;
     border-top: solid white;
     border-left: solid white;
     border-right: solid white;

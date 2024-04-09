@@ -28,26 +28,28 @@
 
         <br><br><br>
         <img src="imgs/DJpic.jpg" alt="Silhouette of a DJ in a club">
-        <div>
-            <article id="marketing">
-                <p id="premium-deals">Subscribe to Premium! choose from thousands of more albums with premium. 
-                    Try a three month subcription for free. Get acces to the latest cutting edge features.
-                    <button>Get Premium!</button>
-                </p>
-                <P id="online-store">Shop in our online store! Pick from our extensive collecton of
-                    clothes, hats, dj gear, and more. More text here with manipulative messages.
-                    <button>Shop Now!</button>
-                </P>
-            </article>
+
+        <div id="welcome-text">
+            <h2>Welcome Message</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Massa ultricies mi quis hendrerit dolor magna eget. 
+                Odio eu feugiat pretium nibh ipsum consequat. 
+                Vitae tempus quam pellentesque nec nam aliquam sem. 
+                Gravida quis blandit turpis cursus in hac habitasse. 
+                Laoreet suspendisse interdum consectetur libero id. 
+                Sit amet cursus sit amet dictum sit amet justo donec. 
+                Ultricies lacus sed turpis tincidunt id aliquet risus. 
+                Faucibus nisl tincidunt eget nullam non nisi. 
+                Vitae suscipit tellus mauris a diam maecenas sed enim. 
+                Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. 
+                Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. 
+                Sit amet porttitor eget dolor. Lacus sed turpis tincidunt id aliquet risus feugiat. 
+                Neque vitae tempus quam pellentesque nec nam aliquam sem.
+
+            </p>
         </div>
-        <nav id="lower-nav">
-            <ul>
-                <li><a href="#album-list">Your Collection</a></li>
-                <li><a href="#album-title-input">Add Album</a></li>
-                <li><a href="">Premium</a></li>
-                <li><a href="">Log In</a></li>
-            </ul>
-        </nav>
         
     </header>
     
@@ -57,58 +59,30 @@
             <!-- Now Playing Display: displays currently playing album, title, artist name, cover art -->
                 <!-- NOTE: dont know how I want to style this yet, i think determined
                      by later interactivity -->
+
             <section class="grid-image">
                 <div class="grid-container">
                     <div id="now-play">
                         <h2>Now Playing</h2>
                     </div>
 
-                    <div id="album-art">Cover Art Here</div>
-                    <div id="album-title">Title Here</div>
-                    <div id="album-artist">Artist Here</div>
+                    <div id="nowPlayingInfo"></div>
+                    <audio  controls src=""></audio>
 
                 </div>
-                <div id="play-buttons"> Play buttons here</div>
-            </section>
 
+                
+            </section>
 
             <!-- Album List: scroll through and play from collection. If >10 or <=10 albums display message -->
-            <br><br><br>
+            <!-- <br><br><br> -->
             <section class="scrollable">
                 <h2>Your Collection</h2>
-                <!-- Not sure how it's going to work making these clickable and moving them
-                     to the display area. I don't know what html ill need for that. -->
-                <!-- NOTE: The list items are filler for now. -->
-                <div id="album-list">
-                    <ul>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                        <li>Title   Artist</li>
-                    </ul>
+                <div>
+                    <ul id="album-list"></ul>
                 </div>
-
             </section>
+
             <!-- Add new album: add new album to the Album list section -->
             <form>
                 <section class="add-album-container">
@@ -120,15 +94,13 @@
                         <label for="album-genre-input">Genre</label>
                         <input type="text" id="album-genre-input" placeholder="Genre" required>                            <label for="album-art-input">Cover Art URL</label>
                         <input type="url" id="album-art-input" placeholder="URL" required>
-                        <input type="button" id="album-button" value="Add Album">
+                        <!-- <input type="button" id="album-button" value="Add Album"> -->
+                        <button id="album-button" onclick="addAlbum()">Add Album</button>
+
 
                 </section>
-                <!-- NOTE: the required messages no longer display, is that because the button
-                            is not linked up to the form? Is it because it doesnt do anything yet?
-                            not sure.  -->
             </form>
         </main>
-        <script src="" async defer></script>
 
         <footer>
             <div>
@@ -158,9 +130,9 @@
                     <li><a href="">FAQ</a></li>
                 </ul>
             </div>
-            <!-- <P>Copyright DJDays.co</p> -->
                     
-            
+        <script src="scritps/script.js" async defer></script>
+
         </footer>
     </body>
 </html>

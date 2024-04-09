@@ -1,7 +1,4 @@
 /* OverallNOTE: work on naming conventions. */
-    /* NOTE: Prolly change top content to a flexbox, move header-p out of 
-             header, add something to top left */
-
         /* QUESTION: I don't understand why there is still some kind of margin
                      or padding on the right side when scoll left. */
 
@@ -30,7 +27,6 @@ h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 header h2{
     text-align: center;
 }
@@ -39,7 +35,7 @@ header h2{
 #top-nav-bar{
     position: top;
     padding-top: 15px;
-    border-bottom: solid white;
+    border-bottom: solid rgb(245, 165, 245);
     margin-bottom: 50px;
 }
 #top-nav-bar ul{
@@ -58,7 +54,7 @@ header h2{
     text-decoration: none;
 }
 #top-nav-bar li a:hover{
-    color: #abddf6;
+    color: rgb(245, 165, 245);
     text-decoration: underline;
 }
 
@@ -76,7 +72,7 @@ header h2{
     text-decoration: none;
 }
 #support-profile a:hover{
-    color: #abddf6;
+    color: rgb(245, 165, 245);
     text-decoration: underline;
 }
 
@@ -89,11 +85,23 @@ header img{
     max-width: fit-content;
     border-radius: 50%;
     position: relative;
-    box-shadow: 0px 0px 15px 5px white;
+    box-shadow: 0px 0px 15px 5px rgb(245, 165, 245);
     margin-bottom: 100px;
 }
 
+/* header welcome text */
+#welcome-text{
+    color: rgb(245, 165, 245);
+    margin: 30px 50% 0px 40px;
+    line-height: 35px;
+}
+#welcome-text h2{
+    color: rgb(245, 165, 245);
+    text-align: left;
+
+}
 /* header paragraphs */
+/*
 #premium-deals{
     position: absolute;
     top: 370px;
@@ -128,9 +136,10 @@ header div{
 header article{
     flex: 1;
 }
+*/
 
 /* header paragraphs buttons */
-article button{
+/* article button{
     margin-top: 10px;
     padding: 7px;
     font-size: larger;
@@ -138,35 +147,7 @@ article button{
 article button:hover{
     transform: scale(1.5);
     transition: 2s;
-}
-
-/* Lower nav */
-#lower-nav{
-    background-color: #030303;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-#lower-nav ul{
-    list-style: none;
-    text-align: center;
-}
-
-#lower-nav li{
-    display: inline-block;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-#lower-nav ul a{
-    color: white;
-    font-size: large;
-    text-decoration: none;
-}
-#lower-nav li a:hover{
-    color: #abddf6;
-    text-decoration: underline;
-}
+} */
 
 /* body general */
 body{
@@ -175,9 +156,6 @@ body{
 h2{
     color: white;
 }
-/* main{
-    padding-top: 50px;
-} */
 
     /* NOTE: Feels like theres something missing here. Like there should more going on in the background. */
     /* NOTE: Not sure how i feel about the shadow. Feels like something with the image above should
@@ -186,65 +164,105 @@ h2{
 
 /* body album display image */
 .grid-image{
-    background-image: url(/Users/htgparticipant/Documents/FrontEndDev/dj_days/imgs/nowplaybackground.jpg);
+    background-image: url("/Users/htgparticipant/Documents/FrontEndDev/dj_days/imgs/pexels-wendy-wei-1190299.jpg");
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+
 }
 
 /* body album display */
-.grid-container{
+/*.grid-container{
     color: white;
-    /* background-color: #030303cc; */
-    /* padding-top: 30px; */
-    padding-bottom: 30px;
+        /* background-color: #030303cc; */
+        /* padding-top: 30px; */
+    /*padding-bottom: 30px;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(8, 100px);
     grid-template-rows: repeat(4, 100px);
     gap: 15px;
     margin-left: 35px;
-    /* border: solid white; */
-    /* box-shadow: 0px 0px 15px 5px white; */
-    /* height: 680px;
-    width: 620px;
-    box-sizing: border-box; */
-    /* border-radius: 5%; */
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* justify-content: center; */
-}
+        /* border: solid white; */
+        /* box-shadow: 0px 0px 15px 5px white; */
+        /* height: 680px;
+        width: 620px;
+        box-sizing: border-box; */
+        /* border-radius: 5%; */
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* justify-content: center; */
+
 #now-play{
-    grid-column: 1 / span 2;
-    text-align: left;
-    /* padding: 30px; */
+    margin-left: 30px;
 }
-#album-art{
-    /* height: 200px;
-    width: 175px; */
-    border: solid;
-    border-radius: 5%;
-    grid-column: 5 / span 4;
-    grid-row: 1 / span 4;
-}
-#album-title{
-    grid-column: 1 / span 3;
-    grid-row: 2;
-    text-align: left;
-}
-#album-artist{
-    grid-column: 1 / span 3;
-    grid-row: 3;
-    text-align: left;
-}
-#play-buttons{
+
+#nowPlayingInfo{
     color: white;
-    font-size: larger;
-    border: solid;
-    box-sizing: border-box;
-    height: fit-content;
-    width: fit-content;
-    /* margin-left: auto;
-    margin-right: auto; */
-    margin: 15px auto 0px auto;
+    padding-bottom: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(5, 100px);
+    gap: 15px;
+    margin-left: 35px;
 }
+#nowPlayingInfo img{
+    grid-column: 4 / 10;
+    grid-row: 1 / 5;
+}
+#now-Playing-Album-title{
+    grid-column: 1 / 4;
+    grid-row: 2;
+    font-size: large;
+    text-align: left;
+}
+#now-Playing-Album-artist{
+    grid-column: 1 / 4;
+    grid-row: 3;
+    font-size: large;
+    text-align: left;
+}
+#now-Playing-Album-genre{
+    grid-column: 1 / 4;
+    grid-row: 4;
+    font-size: large;
+    text-align: left;
+}
+.container {
+    width: 50%; 
+    height: 200px; 
+    margin-bottom: 20px; 
+    overflow: hidden; 
+    border-radius: 5%;
+  }
+
+
+  /* Responsive Images */
+  .responsive-image {
+    width: 100%; 
+    height: 100%; 
+    /* display: grid;  */
+    object-fit: contain;
+    border-radius: 15%;
+    border: solid black;
+    box-sizing: border-box;
+    background-color: #030303;
+    justify-content: center;
+    padding: 10px;
+  }
+
+
+section audio{
+    margin-left: 40%;
+    margin-right: 40%;    
+}
+section audio::-webkit-media-controls-progress-bar {
+    color: rgb(245, 165, 245); 
+  }
+  
+  
 
     /* NOTE: I'm worried that with adding in photo url's the sizing is going
              to mess everything up. I don't think i've done anything to 
@@ -271,7 +289,7 @@ h2{
     background-color: #030303;
 }
 
-.scrollable div ul{
+.scrollable ul{
     display: grid;
     grid: 
     'myArea . . .';
@@ -279,10 +297,9 @@ h2{
     padding: 15px;
     text-align: center;
     justify-items: center;
-}
-.scrollable ul{
     list-style: none;
 }
+
     /* NOTE: put text at the bottom */
 #album-list li{
     display: inline-block;
@@ -292,11 +309,30 @@ h2{
     border: solid;
     box-shadow: 0px 0px 10px 1px white;
     border-radius: 5%;
+    overflow-y: auto;
+    
+}
+#album-list li p{
+    font-size: smaller;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#album-listalbum.title{
+    color: purple;
+}
+
+
+#album-list img{
+    width: auto;
+    height: 150px;
+    object-fit: contain;
+    /* text-align: center; */
 }
 #album-list li:hover{
     transform: scale(1.03);
-    box-shadow: 0px 0px 10px 1px #abddf6;
-    border: solid #abddf6;
+    box-shadow: 0px 0px 10px 1px rgb(245, 165, 245);
+    border: solid rgb(245, 165, 245);
 }
 
 /* body add album */
@@ -333,7 +369,7 @@ form h2{
 }
 #album-button:hover{
     cursor: grab;
-    background-color: #abddf6;
+    background-color: rgb(231, 122, 231);
 }
 .add-album-container label{
     color: white;

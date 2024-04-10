@@ -12,7 +12,6 @@ header{
     padding-top: 20px;
     padding-bottom: 70px;
     margin: -10px;
-    
 }
 h1{
     display: inline;
@@ -86,57 +85,9 @@ header img{
     border-radius: 50%;
     position: relative;
     box-shadow: 0px 0px 15px 5px rgb(245, 165, 245);
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
-
-/*
-#premium-deals{
-    position: absolute;
-    top: 370px;
-    left: 70px;
-    height: 20px;
-    width: 250px;
-    overflow-y: hidden;
-    color: #abddf6;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-}
-
-#online-store{
-    position: absolute;
-    top: 370px;
-    right: 50px; 
-    height: 20px;
-    width: 250px;
-    overflow-y: hidden;
-    color: #abddf6;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-}
-
-#marketing p:hover{
-    overflow-y: visible;
-}
-
-header div{
-    display: flex;
-}
-header article{
-    flex: 1;
-}
-*/
-
-/* header paragraphs buttons */
-/* article button{
-    margin-top: 10px;
-    padding: 7px;
-    font-size: larger;
-}
-article button:hover{
-    transform: scale(1.5);
-    transition: 2s;
-} */
 
 /* body general */
 body{
@@ -146,45 +97,22 @@ h2{
     color: white;
 }
 
-    /* NOTE: Feels like theres something missing here. Like there should more going on in the background. */
-    /* NOTE: Not sure how i feel about the shadow. Feels like something with the image above should
-             change if im gona keep it. */
-             /* UPDATE: shadow works better with the lower nav bar, section still seems off. */
-
 /* body album display image */
 .grid-image{
     background-image: url("/Users/htgparticipant/Documents/FrontEndDev/dj_days/imgs/pexels-wendy-wei-1190299.jpg");
     background-size: cover;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
     display: grid;
-
+    border-top: solid rgb(245, 165, 245);
 }
 
 /* body album display */
-/*.grid-container{
-    color: white;
-        /* background-color: #030303cc; */
-        /* padding-top: 30px; */
-    /*padding-bottom: 30px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(8, 100px);
-    grid-template-rows: repeat(4, 100px);
-    gap: 15px;
-    margin-left: 35px;
-        /* border: solid white; */
-        /* box-shadow: 0px 0px 15px 5px white; */
-        /* height: 680px;
-        width: 620px;
-        box-sizing: border-box; */
-        /* border-radius: 5%; */
-        /* margin-left: auto;
-        margin-right: auto; */
-        /* justify-content: center; */
-
-#now-play{
+/* I want to add a black box around the title, artist, etc section in the now playing part, 
+    but i ran out of time for now, so go back and do that later. */
+#now-play h2{
     margin-left: 30px;
+    color: rgb(245, 165, 245);
 }
 
 #nowPlayingInfo{
@@ -225,24 +153,19 @@ h2{
     margin-bottom: 20px; 
     overflow: hidden; 
     border-radius: 5%;
-  }
+}
 
 
   /* Responsive Images */
   .responsive-image {
     width: 100%; 
     height: 100%; 
-    /* display: grid;  */
     object-fit: contain;
-    border-radius: 15%;
-    border: solid black;
-    box-sizing: border-box;
-    background-color: #030303;
     justify-content: center;
-    padding: 10px;
-  }
+}
 
 
+/* Audio bar, second line doesnt work yet. */
 section audio{
     margin-left: 40%;
     margin-right: 40%;    
@@ -252,11 +175,6 @@ section audio::-webkit-media-controls-progress-bar {
   }
   
   
-
-    /* NOTE: I'm worried that with adding in photo url's the sizing is going
-             to mess everything up. I don't think i've done anything to 
-             make sure any images added will be sized to their respective containers. */
-
 /* body album collection */
 .scrollable div{
     height: 500px;
@@ -268,8 +186,6 @@ section audio::-webkit-media-controls-progress-bar {
     justify-content: center;
 }
 
-    /* NOTE: I dont like how the h2 and maybe whole album collection section is styled. 
-             Feels weird. */
 .scrollable h2{
     padding: 25px 10px 15px 10px;
     border-top: solid white;
@@ -288,8 +204,6 @@ section audio::-webkit-media-controls-progress-bar {
     justify-items: center;
     list-style: none;
 }
-
-    /* NOTE: put text at the bottom */
 #album-list li{
     display: inline-block;
     color: white;
@@ -299,29 +213,31 @@ section audio::-webkit-media-controls-progress-bar {
     box-shadow: 0px 0px 10px 1px white;
     border-radius: 5%;
     overflow-y: auto;
-    
 }
 #album-list li p{
     font-size: smaller;
     text-align: left;
     padding-left: 10px;
+    margin-right: 10px;
+    overflow-x: hidden;
+    text-wrap: nowrap;
+    line-height: 18px;
 }
-
-#album-listalbum.title{
-    color: purple;
-}
-
 
 #album-list img{
     width: auto;
-    height: 150px;
+    height: 130px;
     object-fit: contain;
-    /* text-align: center; */
+}
+#album-list li p:hover{
+    overflow-x: visible;
+    text-wrap: wrap;
 }
 #album-list li:hover{
     transform: scale(1.03);
     box-shadow: 0px 0px 10px 1px rgb(245, 165, 245);
     border: solid rgb(245, 165, 245);
+    overflow-x: visible;
 }
 
 /* body add album */
@@ -404,3 +320,33 @@ h4{
     text-decoration: underline;
     padding-bottom: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   

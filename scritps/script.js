@@ -2,7 +2,13 @@
     let albums = [
       { id: 1, title: "When We All Fall Asleep Where Do We Go", artist: "Billie Eilish", genre: "Pop", coverArt: "/Users/htgparticipant/Documents/FrontEndDev/dj_days/imgs/pexels-wanshan-luo-18428987.jpg" },
       { id: 2, title: "The Click", artist: "AJR", genre: "Alt Pop", coverArt: "/Users/htgparticipant/Documents/FrontEndDev/dj_days/imgs/pexels-padli-pradana-772478.jpg" },
-      { id: 3, title: "Album 3", artist: "Artist 3", genre: "Genre 3", coverArt: "https://example.com/album3-cover.jpg" }
+      { id: 3, title: "Four Seasons", artist: " Vivaldi", genre: "Classical Baroque", coverArt: "/Users/htgparticipant/Documents/FrontEndDev/dj_days-1/imgs/fourseaons.jpg" },
+      { id: 4, title: "Beethoven's 9th Symphony", artist: " Beethoven", genre: "Classical Baroque", coverArt: "/Users/htgparticipant/Documents/FrontEndDev/dj_days-1/imgs/orchestra.jpg" },
+      { id: 5, title: "Glory Sound Prep", artist: " John Bellion", genre: "Pop", coverArt: "/Users/htgparticipant/Documents/FrontEndDev/dj_days-1/imgs/newyork.jpg" },
+      { id: 6, title: "The Human Condition", artist: " John Bellion", genre: "Pop", coverArt: "/Users/htgparticipant/Documents/FrontEndDev/dj_days-1/imgs/sunset.jpg" },
+      { id: 7, title: "Trench", artist: " 21 Pilots", genre: "Alt-Pop", coverArt: "/Users/htgparticipant/Documents/FrontEndDev/dj_days-1/imgs/vulture.jpg" },
+      { id: 8, title: "Volume II", artist: " L.E.J", genre: "Pop", coverArt: "/Users/htgparticipant/Documents/FrontEndDev/dj_days-1/imgs/france.jpg" },
+      { id: 9, title: "Hot Pink", artist: " Doja Cat", genre: "R&B/Soul", coverArt: "/Users/htgparticipant/Documents/FrontEndDev/dj_days-1/imgs/hotpink.jpg" }
     ];
 
     let nowPlayingAlbum = null;
@@ -26,9 +32,6 @@ function displayNowPlaying() {
     }
   }
   
-
-
-
     // Function to display album list
     function displayAlbums() {
       const albumListElement = document.getElementById('album-list');

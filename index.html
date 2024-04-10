@@ -16,7 +16,7 @@
         <nav id="top-nav-bar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="">Search</a></li>
+                <li><a href="#album-list">Collection</a></li>
                 <li><a href="">Premium</a></li>
                 <li><a href="">About Us</a></li>
             </ul>
@@ -27,9 +27,7 @@
         </section>
 
         <br><br><br>
-        <img src="imgs/DJpic.jpg" alt="Silhouette of a DJ in a club">
-
-        
+        <img src="imgs/DJpic.jpg" alt="Silhouette of a DJ in a club"> 
     </header>
     
     <body>
@@ -49,8 +47,6 @@
                     <audio  controls src=""></audio>
 
                 </div>
-
-                
             </section>
 
             <!-- Album List: scroll through and play from collection. If >10 or <=10 albums display message -->
@@ -71,12 +67,11 @@
                         <label for="album-artist-input">Artist</label>
                         <input type="text" id="album-artist-input" placeholder="Artist" required>
                         <label for="album-genre-input">Genre</label>
-                        <input type="text" id="album-genre-input" placeholder="Genre" required>                            <label for="album-art-input">Cover Art URL</label>
+                        <input type="text" id="album-genre-input" placeholder="Genre" required>                           
+                        <label for="album-art-input">Cover Art URL</label>
                         <input type="url" id="album-art-input" placeholder="URL" required>
                         <!-- <input type="button" id="album-button" value="Add Album"> -->
                         <button id="album-button" onclick="addAlbum()">Add Album</button>
-
-
                 </section>
             </form>
         </main>

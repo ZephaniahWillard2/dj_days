@@ -89,18 +89,7 @@ header img{
     margin-bottom: 100px;
 }
 
-/* header welcome text */
-#welcome-text{
-    color: rgb(245, 165, 245);
-    margin: 30px 50% 0px 40px;
-    line-height: 35px;
-}
-#welcome-text h2{
-    color: rgb(245, 165, 245);
-    text-align: left;
 
-}
-/* header paragraphs */
 /*
 #premium-deals{
     position: absolute;

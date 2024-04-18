@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
 
     //changed here
-const albumsFilePath = path.join(_dirname, "data", "albums.json");
+const albumsFilePath = path.join(__dirname, "data", "albums.json");
 
     //Changed here.
     //Not sure what to change here. Do i even need the error messages?

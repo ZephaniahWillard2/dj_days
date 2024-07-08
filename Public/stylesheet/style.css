@@ -112,7 +112,7 @@ h2{
     but i ran out of time for now, so go back and do that later. */
 #now-play h2{
     margin-left: 30px;
-    color: rgb(245, 165, 245);
+    /* color: rgb(245, 165, 245); */
 }
 
 #nowPlayingInfo{
